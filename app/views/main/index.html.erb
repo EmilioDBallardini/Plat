@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+	.img-fondo{
+		position: absolute;
+		z-index:-1;
+		opacity: 0.5;
+		width: 100%;
+	}
+	</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title >
@@ -9,20 +17,46 @@
 </head>
 <body>
 
-	<div class="container has-bg-img">
-		<img src="http://osolehost.com/talpsa/imagenes/slider/FLTnFsa6pK3wVcm7UBBuSbRv0EphW7VByiCh8ln6.png" alt="" class="bg-img position-relative bg-overlay", style="opacity: 0.6;">
+	<div class="container-fluid has-bg-img px-0">
+		<img src="http://osolehost.com/talpsa/imagenes/slider/FLTnFsa6pK3wVcm7UBBuSbRv0EphW7VByiCh8ln6.png" class="bg-img img-fondo img-responsive">
 		<div class="row">
-		<h1>Bienvenido al centro de compras de pasaje de PLAT .AS</h1>
+			<div class="col-3">
+				<h3>
+					<%= render partial: 'layouts/header'%>
+				</h3>
+			</div>
+			<div class="col-6">
+				<p class="fs-3">Centro de compras de pasaje de PLAT .AS</p>
+			</div>
 		</div>
 		<div class="row">
-			<div class="col"><h1>contacto</h1></div>
-			<div class="col-5"><%= render 'main/compra'%></div>
-			<div class="col"><h1>anuncio</h1></div>
+			<div class="col-3"><h3>contacto</h3></div>
+			<div class="col-6"><%= render partial:'main/compra'%></div>
+			<div class="col-3"><h3>anuncio</h3></div>
 		</div>
-		<div class="row"><h1>info</h1></div>	
+		<div class="row">
+			<div class="col-3">
+				<h3>
+					info
+				</h3>
+			</div>
+			<div class="col-3">
+				<h3>
+					info
+				</h3>
+			</div>
+			<div class="col-3">
+				<h3>
+					info
+				</h3>
+			</div>
+			<div class="col-3">
+				<h3>
+					info
+				</h3>
+			</div>
+		</div>
 	</div>
-	
-
 
 </body>
 </html>
