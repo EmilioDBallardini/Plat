@@ -2,12 +2,7 @@
 <html>
 <head>
 	<style>
-	.img-fondo{
-		position: absolute;
-		z-index:-1;
-		opacity: 0.5;
-		width: 100%;
-	}
+	
 	</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,8 +13,9 @@
 <body>
 
 	<div class="container-fluid has-bg-img px-0">
-		<img src="http://osolehost.com/talpsa/imagenes/slider/FLTnFsa6pK3wVcm7UBBuSbRv0EphW7VByiCh8ln6.png" class="bg-img img-fondo img-responsive">
-		<div class="row">
+		<img src="http://osolehost.com/talpsa/imagenes/slider/FLTnFsa6pK3wVcm7UBBuSbRv0EphW7VByiCh8ln6.png" class="bg-img img-fondo img-responsive" style="filter: blur(3px); max-width: 100%;
+  height: auto;">
+		<div class="row p-3">
 			<div class="col-3">
 				<h3>
 					
@@ -30,32 +26,35 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-3"><h3>contacto</h3></div>
+			<div class="col-3"> </div>
 			<div class="col-6"><%= render partial:'main/compra'%></div>
-			<div class="col-3"><h3>anuncio</h3></div>
+			<div class="col-3"></div>
+		</div>
+		<div class="row p-5">
+		<div class="col-1 p-5">
+		</div>
+		<div class="col-11">
+		<%= image_tag "set-banners-viajes_1126-210.jpg",:class=>"p-5"%>
+		</div>
 		</div>
 		<div class="row">
 			<div class="col-3">
-				<h3>
-					info
-				</h3>
+			</div>
+			<div class="col-3">	
 			</div>
 			<div class="col-3">
-				<h3>
-					info
-				</h3>
-			</div>
-			<div class="col-3">
-				<h3>
-					info
-				</h3>
-			</div>
-			<div class="col-3">
-				<h3>
-					info
-				</h3>
+				<%= image_tag "compras-azul", :class=>"compra-pasajes-img"%>
+				</div>
+			<div class="col-3">	
 			</div>
 		</div>
+
+
+		<div>
+		<img src="https://chacabuco.gob.ar/wp-content/uploads/2020/12/terminal-1-1080x675.jpeg" class="bg-img img-fondo img-responsive img-delmedio">
+		</div>
+
+
 	</div>
 
 </body>
