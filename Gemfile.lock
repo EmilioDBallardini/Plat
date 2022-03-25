@@ -115,7 +115,11 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+<<<<<<< HEAD
     mini_portile2 (2.7.1)
+=======
+    mini_portile2 (2.6.1)
+>>>>>>> 036ec10720d66655e86ebd6e00aa3abda51d6370
     minitest (5.15.0)
     msgpack (1.4.2)
     net-imap (0.2.3)
@@ -134,10 +138,17 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+<<<<<<< HEAD
     nokogiri (1.13.0)
       mini_portile2 (~> 2.7.0)
       racc (~> 1.4)
     nokogiri (1.13.0-x86_64-linux)
+=======
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
+    nokogiri (1.12.5-x86_64-linux)
+>>>>>>> 036ec10720d66655e86ebd6e00aa3abda51d6370
       racc (~> 1.4)
     pg (1.2.3)
     public_suffix (4.0.6)
